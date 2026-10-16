@@ -16,6 +16,7 @@
 #include "hud/breakindicator.hpp"
 #include "hud/playercoords.hpp"
 #include "hud/compass.hpp"
+#include "hud/minimap.hpp"
 #include "hud/armorhud.hpp"
 #include "hud/potionhud.hpp"
 #include "player/timechanger.hpp"
@@ -100,6 +101,7 @@ void registerAllModules() {
     registry.emplace<BreakIndicatorModule>();
     registry.emplace<PlayerCoordsModule>();
     registry.emplace<CompassModule>();
+    registry.emplace<MiniMapModule>();
     registry.emplace<ArmorHudModule>();
     registry.emplace<PotionHudModule>();
     registry.emplace<TimeChangerModule>();
